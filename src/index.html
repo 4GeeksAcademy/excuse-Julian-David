@@ -1,34 +1,38 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Generador de mensajes</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Actualiza la web para obtener tu mensaje</h1>
-      <img src="https://picsum.photos/seed/picsum/400/300?random=1">
-      <p class="alert alert-warning mt-4" id = "excuse">
-        
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="">Jesús for you</a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de mensajes</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container-fluid text-center bg-second mt-5">
+    <div class="d-flex justify-content-center">
+      <h2 class="card mt-5 alert alert-light" role="alert">Oprime el botton para obtener un nuevo mensaje</h2>
     </div>
+    <div>
+      <button type="button" class="btn btn-outline-light mb-3" onclick="window.location.reload()">
+        Recargar página
+      </button>
+    </div>
+    
+    <img src="https://raw.githubusercontent.com/4GeeksAcademy/excuse-Julian-David/main/src/assets/img/crown-thorns.jpg"
+      class="img-elevada" alt="Imagen elevada" width="500" height="auto">
+    <div class="d-flex justify-content-center">
+      <p class="alert alert-primary my-4" id="excuse"></p>
+    </div>
+    <div class="fixed-bottom p-4">
+      Made with ❤️ by
+      <a href="">Jesús for you</a>
+    </div>
+  </div>
+  <script type="module" src="/app.js"></script>
+</body>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
 </html>
